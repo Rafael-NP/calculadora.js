@@ -4,4 +4,136 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Jersey 25', 'sans-serif';
+    font-weight: 100;
+}
+
+header{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 30px;
+    background: #080F2F;
+    color: #fff;
+    box-shadow: 0 0 0 1px #00000062;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+header h1{
+    font-size: 8vh;
+    user-select: none;
+}
+
+header button{
+    padding: 0px 4px;
+    font-size: 3vh;
+    text-wrap: nowrap;
+    max-height: 30px;
+    margin-left: auto;
+}
+
+main{
+    background: #fafafa;
+    padding: 20px;
+    min-height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+article{
+    width: 400px;
+    height: 400px;
+    margin: 10px;
+    padding: 20px;
+    background: #454343;
+    border-radius: 10px;
+    font-size: 6vh;
+}
+
+#resposta{
+    display: block;
+    background: #fafafa;
+    border-radius: 5px;
+    height: 70px;
+    text-align: end;
+    padding: 15px
+}
+
+section button{
+    width: 60px;
+    height: 60px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#teclado{
+    display: flex;
+    gap: 5px;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.dig{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+button, #resposta{
+    user-select: none;
+}
+
+button:focus,
+button:active,
+#resposta:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+footer{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 30px;
+    background: #080F2F;
+    color: #fff;
+    box-shadow: 0 0 0 1px #00000062;
+}
+
+footer a img{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #fafafa;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+}
+
+a:focus, a:active{
+    outline: none;
+    box-shadow: none;
+}
+
+@media (max-width:430px){
+    section button{
+        height: 45px;
+        width: 45px;
+        margin: 5px;
+    }
+}
+@media (max-width:400px){
+    section button{
+        margin: 0;
+    }
+}
+@media (max-width:350px){
+    section button{
+        height: 38px;
+        width: 38px;
+    }
 }

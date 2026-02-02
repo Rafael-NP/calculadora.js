@@ -1,64 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Calculadora</title>
 </head>
+
 <body>
     <header>
-            <h1>Calculadora</h1>
-            <button>modo claro</button>
+        <h1>Calculadora</h1>
+        <button>modo claro</button>
     </header>
     <main>
         <article>
             <section id="resposta">
-                <p></p>
+                <p> </p>
             </section>
-            <section id="numeros">
-                <div class="num">
-                    <button>1</button>
-                    <button>2</button>
-                    <button>3</button>
-                </div>
-                <div class="num">
-                    <button>4</button>
-                    <button>5</button>
-                    <button>6</button>
-                </div>
-                <div class="num">
-                    <button>7</button>
-                    <button>8</button>
-                    <button>9</button>
-                </div>
-                <div class="num"></div>
-                    <button>0</button>
-                </div>
-            </section>
-            <section id="operadores">
-                <div class="op">
-                    <button>+</button>
-                    <button>-</button>
-                </div>
-                <div class="op">
-                    <button>x</button>
-                    <button>÷</button>
-                </div>
-                <div class="op">
-                    <button>^</button>
-                    <button>√</button>
-                </div>
-                <div class="op">
-                    <button>=</button>
-                </div>
-            </section>
+            <div id="teclado">
+                <section class="dig">
+                    <div class="num">
+                        <button>1</button><button>2</button><button>3</button>
+                    </div>
+                    <div class="num">
+                        <button>4</button><button>5</button><button>6</button>
+                    </div>
+                    <div class="num">
+                        <button>7</button><button>8</button><button>9</button>
+                    </div>
+                    <div class="num">
+                        <button>0</button>
+                    </div>
+                </section>
+
+                <section class="dig">
+                    <div class="num">
+                        <button>+</button>
+                        <button>-</button>
+                    </div>
+                    <div class="num">
+                        <button>x</button>
+                        <button>÷</button>                       
+                    </div>
+                    <div class="num">
+                        <button>^</button>
+                        <button>√</button>
+                    </div>
+                    <div class="num">
+                        <button>=</button>
+                    </div> 
+                </section>
+            </div>
         </article>
     </main>
     <footer>
         <p>&copy; 2025 - Todos os direitos reservados</p>
-        <a href="https://www.github.com/rafael-np"></a>
+        <a href="https://www.github.com/rafael-np" target="_blank"> 
+            <img src="./assets/github.png" alt="github">
+        </a>
     </footer>
     <script src="./js/script.js"></script>
 </body>
+
 </html>
