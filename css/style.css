@@ -30,6 +30,8 @@ header button{
     text-wrap: nowrap;
     max-height: 30px;
     margin-left: auto;
+    box-shadow: 0 0 3px #04738f, 0 0 5px #099dc2, 0 0 8px #10bde9;
+    cursor: pointer;
 }
 
 main{
@@ -58,7 +60,15 @@ article{
     border-radius: 5px;
     height: 70px;
     text-align: end;
-    padding: 15px
+    padding: 15px;
+    width: 360px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#resposta p { 
+    max-width: 350px;
 }
 
 section button{
@@ -87,8 +97,8 @@ button, #resposta{
     user-select: none;
 }
 
-button:focus,
-button:active,
+#teclado button:focus,
+#teclado button:active,
 #resposta:focus{
     outline: none;
     box-shadow: none;
